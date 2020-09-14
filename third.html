@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="third.css">
+</head>
+
+<body>
+    <nav id="nav1">Levels</nav>
+    <div id="dashboard">
+        <div id="happy1">
+            Level 1
+            <img src="./images/deadpool.png" alt="">
+        </div>
+        <div id="happy2">
+            Level 2
+            <img src="./images/captainAmerica.png" alt="" width="330px" height="440px">
+        </div>
+        <div id="happy3">
+            Level 3
+            <img src="./images/ghost.png" height="440px" width="330px" alt="">
+        </div>
+    </div>
+    <footer id="foot">
+        Click On Image To Start!!
+    </footer>
+    <script>
+        console.log("hi");
+        let a = new Audio("./audio/Special Forces URI.mp3");
+        a.loop = true;
+        a.play();
+
+        document.getElementById("happy1").addEventListener("click", () => {
+            window.location.replace("Level1.html");
+        });
+
+        document.getElementById("happy2").addEventListener("click", () => {
+            window.location.replace("Level2.html");
+        });
+
+        document.getElementById("happy3").addEventListener("click", () => {
+            window.location.replace("Level3.html");
+        });
+    </script>
+</body>
+
+</html>

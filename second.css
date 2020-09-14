@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./images/delhi2.jpg");
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    font-family: cursive;
+}
+
+#s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: seagreen;
+    align-items: center;
+    margin: 50px;
+    padding: 5px;
+    animation-name: example;
+    animation-duration: 10s;
+    color: seashell;
+    background-color: red;
+
+}
+
+#s1 {
+    /* margin: 8px; */
+
+    font-size: 40px;
+}
+
+#s2 h2 {
+    /* margin: 10px; */
+    font-size: 40px;
+}
+
+#s2 h3 {
+    margin: 8px;
+    font-size: 30px;
+}
+
+#s2 a {
+    display: flex;
+    margin: 4px;
+    font-size: 40px;
+    color: springgreen;
+    background-color: red;
+    border-radius: 40%;
+    justify-content: center;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

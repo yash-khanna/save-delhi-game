@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    text-decoration: underline;
+    color: black;
+    background-color: orange;
+}
+
+#demo {
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 900;
+    animation-name: example;
+    animation-duration: infinite;
+}
+
+#p2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#p3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#play {
+    color: black;
+    background-color: #0fff73;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 900;
+    animation-name: example;
+    animation-duration: infinite;
+}
+
+#main {
+    background-color: #07f0d8;
+    margin: 20px;
+    padding: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 900;
+    animation-name: example;
+    animation-duration: infinite;
+
+}
+
+
+body {
+    background-image: url(./images/metro\ map.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 85% 60%;
+    background-color: black;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#group {
+    width: 45px;
+    height: 45px;
+    top: 1px;
+    border: 4px solid red;
+    animation-name: exam1;
+    animation-duration: 6s;
+    border-color: blue;
+}
+
+@keyframes exam1 {
+    0% {
+        border-color: blue;
+    }
+
+    10% {
+        border-color: green;
+    }
+
+    20% {
+        border-color: orange;
+    }
+
+    30% {
+        border-color: crimson;
+    }
+
+    40% {
+        border-color: teal;
+    }
+
+    50% {
+        border-color: navy;
+    }
+
+    60% {
+        border-color: yellow;
+    }
+
+    70% {
+        border-color: snow;
+    }
+
+    80% {
+        border-color: orange;
+    }
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 250px;
+}
+
+#box {
+    grid-column: 1/2;
+    margin-top: 250px;
+}
+
+#dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 13/15;
+    height: 100px;
+    max-height: 800px;
+    min-height: 40px;
+    background-color: #0fff73;
+    text-decoration: underline;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.droptarget {
+    position: absolute;
+    top: 523px;
+    left: 35px;
+}
+
+.parent p {
+    position: fixed;
+    bottom: 1px;
+
+}
+
+#lowerButtons {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+#restart {
+    padding: 15px;
+    color: red;
+    background-color: yellow;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#missionfailed {
+    visibility: hidden;
+}
+
+/* #river1 {
+    position: absolute;
+    top: 0px;
+    left: 740px;
+    width: 40mm;
+    height: 40mm;
+}
+
+#river2 {
+    position: absolute;
+    top: 230px;
+    left: 799px;
+    width: 26mm;
+    /* height: 40mm; */
+/* visibility: hidden; */
+
+#b1,
+#b2,
+#b3 {
+    position: fixed;
+    bottom: 0;
+    color: black;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+#b1 {
+    right: 240px;
+}
+
+#b2 {
+    right: 160px;
+}
+
+#b3 {
+    right: 80px;
+}
+
+#foottag {
+    position: fixed;
+    color: black;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+}

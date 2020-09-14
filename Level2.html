@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 Html</title>
+    <link rel="stylesheet" href="Level2.css">
+</head>
+
+<body>
+    <div id="boss">
+        <nav>
+            <h1 id="header1">To Play the game Set zoom settings to 100%. You Can Either Drag or move using
+                Arrows(Level2)</h1>
+        </nav>
+
+        <div id="p2">
+            <div id="p3">
+                <button id="play">Play Now!</button>
+                <p id="demo">Click to Start!!</p>
+            </div>
+            <p id="main">Score : 0</p>
+        </div>
+        <section>
+        </section>
+        <div class="parent">
+
+            <p id="foottag">Group of People</p>
+            <div id="box">
+                <div class="droptarget" id="draggableSpan" ondragover="dragover(event);">
+                    <img src="./images/Capture.JPG" alt="image" ondrag="dragging(event)" id="group"
+                        ondragstart="dragstart1(event);">
+                    <img src="./images/Capture.JPG" alt="image" ondrag="dragging(event)" id="group1"
+                        ondragstart="dragstart1(event);">
+                </div>
+                <script>
+                    let a = new Audio("./audio/level2.mp3");
+                    a.play();
+                </script>
+                <script src="Level2.js" module="type"></script>
+
+                <div id="dropzone" ondragover="dragover(event)" ondrop="drop(event)">DropZone-SafeZone</div>
+            </div>
+            <div id="score">
+
+            </div>
+            <div id="lowerButtons">
+                <button id="restart">Restart Level 2</button>
+            </div>
+            <div>
+                <img src="./images/miss.png" alt="" id="missionfailed">
+            </div>
+        </div>
+        <button id="b1">Level 1</button>
+        <script>
+            console.log(document.getElementById("b1"));
+            var b1 = document.getElementById("b1");
+            if (b1) {
+                b1.addEventListener("click", () => {
+                    console.log("b1");
+                    window.location.replace("Level1.html");
+                });
+            }
+        </script>
+        <button id="b2">Level 2</button>
+        <script>
+            var b3 = document.getElementById("b2");
+            if (b3) {
+                b3.addEventListener("click", () => {
+                    console.log("b2");
+                    window.location.replace("Level2.html");
+                });
+            }
+        </script>
+        <button id="b3">Level 3</button>
+        <script>
+            var b4 = document.getElementById("b3");
+            if (b4) {
+                b4.addEventListener("click", () => {
+                    console.log("b3");
+                    window.location.replace("Level3.html");
+                });
+            }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
